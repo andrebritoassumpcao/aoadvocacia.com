@@ -149,6 +149,32 @@ img {
 .info h2{
     font-size: 1.25em;
 }
+
+/*Conheca*/
+.section-conheca{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    margin-top: 10px;
+    max-width: 100vw;
+    flex-direction: column;
+    
+}
+.conheca-bg{
+    background: linear-gradient(180deg, #B49C73  50%, #37373F 50%);
+    width: 100vw;
+    height: 500px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+.conheca-bg img{
+ margin-top: 100px !important;
+ margin: 0 auto;
+ width: 220px;
+ height: 280px;
+ box-shadow: 2px 3px 5px 0px rgba(0,0,0,0.5);
+}
 /*Footer*/
 .footer-bg {
   background-color: #37373f;
