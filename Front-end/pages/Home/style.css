@@ -178,11 +178,12 @@ img {
 
  /* Whatsapp*/
  @media(max-width: 600px){
+ 
   .whatsapp-link{
       position: fixed;
       width: 50px;
       height: 50px;
-      bottom: 20px !important;
+      bottom: 10px !important;
       right: 20px !important;
       background-color: #25d366;
       color: #FFFFFF;
@@ -190,7 +191,7 @@ img {
       text-align: center;
       font-size: 30px;
       box-shadow: 1px 1px 2px #888;
-      z-index: 9900;
+      z-index: 9000;
       transform: scale(1);
       animation: pulse 2s infinite;
       }
@@ -224,7 +225,7 @@ img {
   text-align: center;
   font-size: 40px;
   box-shadow: 1px 1px 2px #888;
-  z-index: 9900;
+  z-index: 9000;
   transform: scale(1);
 animation: pulse 2s infinite;
   }

@@ -3,11 +3,12 @@
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
     <!-- ionicons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
     <!-- CSS -->
     <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="../../../mobile/style.css">
     <title>Home</title>
   </head>
   <body>
@@ -24,7 +25,12 @@
          <a href="">Logo</a>
         </div>
         <nav class="header-content">
-          <ul>
+          <div class="mobile-menu">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+          </div>
+          <ul class="nav-list">
             <li class="nav-item is-active">
               <a href="../Home/index.html">Home</a>
             </li>
@@ -103,5 +109,6 @@
         </div>
       </footer>
     </main>
+    <script src="../../../mobile/mobile-navbar.js"></script>
   </body>
 </html>
