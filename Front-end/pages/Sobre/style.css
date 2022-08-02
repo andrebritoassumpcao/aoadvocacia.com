@@ -247,6 +247,71 @@ img {
     transform: scale(1.1);
     
 }
+
+
+ /* Whatsapp*/
+ @media(max-width: 600px){
+    .whatsapp-link{
+        position: fixed;
+        width: 50px;
+        height: 50px;
+        bottom: 20px !important;
+        right: 20px !important;
+        background-color: #25d366;
+        color: #FFFFFF;
+        border-radius: 50px;
+        text-align: center;
+        font-size: 30px;
+        box-shadow: 1px 1px 2px #888;
+        z-index: 9900;
+        transform: scale(1);
+        animation: pulse 2s infinite;
+        }
+ }
+
+  @keyframes pulse {
+	0% {
+		transform: scale(0.95);
+		box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.7);
+	}
+
+	70% {
+		transform: scale(1);
+		box-shadow: 0 0 0 10px rgba(0, 0, 0, 0);
+	}
+
+	100% {
+		transform: scale(0.95);
+		box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+	}
+}
+ .whatsapp-link{
+    position: fixed;
+    width: 80px;
+    height: 80px;
+    bottom: 40px;
+    right: 40px;
+    background-color: #25d366;
+    color: #FFFFFF;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 40px;
+    box-shadow: 1px 1px 2px #888;
+    z-index: 9900;
+    transform: scale(1);
+	animation: pulse 2s infinite;
+    }
+
+    .whatsapp-link:hover{
+        background-color: #fff;
+        color: #22D829;
+    }
+
+    #whatsapp{
+        position: relative;
+        bottom: -13px;
+  
+    }
 /*Footer*/
 .footer-bg {
   background-color: #37373f;
