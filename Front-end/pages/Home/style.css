@@ -283,3 +283,15 @@ animation: pulse 2s infinite;
   display: block;
   padding: 10px;
 }
+#social-item{
+  color: white;
+  font-size: 28px;
+  margin: 10px;
+}
+.social{
+  display: flex;
+  flex-direction: row;
+  height: 80px;
+  width: 180px;
+  margin: 0 !important;
+}

@@ -29,19 +29,21 @@ body {
   }
   .nav-list {
     position: absolute;
-    top: 17.5vh;
+    top: 13.3vh;
     right: 0;
     width: 50vw;
     height: 92vh;
     background: #fff;
     flex-direction: column;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: top;
+    gap: 50px;
     transform: translateX(100%);
     transition: transform 0.3s ease-in;
     z-index: 9900;
   }
   .nav-list li {
+    margin-top: 30px;
     margin-left: 0;
     opacity: 0;
   }
@@ -76,10 +78,46 @@ body {
 }
 
 /* Página Home*/
+@media (max-width: 600px){
+#exp{
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.9);
+  font-size: 18px !important;
+  top: -110px;
+  left: auto !important;
+}
+}
+
 /* Página Sobre*/
-/*Banner*/
 @media (max-width: 600px) {
+  /*Banner*/
 .section-banner {
   height: 180px;
+}
+ 
+.section-quem{
+  flex-direction: column ;
+}
+.text{
+  flex:1;
+}
+.text h1{
+  margin: 0;
+  text-align: center;
+  font-size: 26px;
+}
+.text p{
+  font-size: 16px;
+}
+
+.section-historia{
+  flex-direction: column-reverse;
+  margin: 0 30px;
+}
+.historia_text h1{
+  font-size: 26px;
+}
+.historia_text p{
+  font-size: 16px;
 }
 }
