@@ -43,7 +43,7 @@ img {
   padding-top: 10px;
 }
 .superinfo-items a {
-  color: #fff;
+  color: #eeeded;
 }
 .superinfo-items a,
 .superinfo-items p {
@@ -54,6 +54,9 @@ img {
 
 .menu-bg {
   background-color: #fff;
+  position: fixed;
+  width: 100vw;
+  top: 0;
 }
 
 .menu {
@@ -111,6 +114,7 @@ img {
   background-repeat: no-repeat;
   height: 590px;
   margin-bottom: 0;
+  margin-top: 120px;
 }
 
 /*Quem somos*/

@@ -33,6 +33,7 @@ img {
 .superinfo-bg {
   background-color: #b49c73;
   color: #fff;
+ 
 }
 .superinfo-items {
   max-width: 960px;
@@ -43,7 +44,7 @@ img {
   padding-top: 10px;
 }
 .superinfo-items a {
-  color: #fff;
+  color: #eeeded;
 }
 .superinfo-items a,
 .superinfo-items p {
@@ -54,6 +55,9 @@ img {
 
 .menu-bg {
   background-color: #fff;
+  position: fixed;
+  width: 100vw;
+  top: 0;
 }
 
 .menu {
@@ -110,6 +114,7 @@ img {
   background-size: cover;
   background-repeat: no-repeat;
   height: 623px;
+  margin-top: 120px;
   margin-bottom: 10px;
 }
 /*Saiba*/
@@ -227,7 +232,7 @@ img {
   box-shadow: 1px 1px 2px #888;
   z-index: 9000;
   transform: scale(1);
-animation: pulse 2s infinite;
+  animation: pulse 2s infinite;
   }
 
   .whatsapp-link:hover{
