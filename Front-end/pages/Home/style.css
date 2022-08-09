@@ -49,7 +49,7 @@ img {
 }
 
 .superinfo-items a {
-    color: #fff;
+    color: #eeeded;
 }
 
 .superinfo-items a,
@@ -58,9 +58,11 @@ img {
 }
 
 /*Header*/
-
 .menu-bg {
     background-color: #fff;
+    position: fixed;
+    width: 100vw;
+    top: 0;
 }
 
 .menu {
@@ -112,12 +114,13 @@ img {
 
 /*Banner*/
 .section-banner {
-    background-image: url(../../assets/img/banner.png);
+    background-image: url(../../assets/img/homeImg/banner.png);
     max-width: 100vw;
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
     height: 623px;
+    margin-top: 120px;
     margin-bottom: 10px;
 }
 
@@ -191,22 +194,69 @@ img {
     box-shadow: 2px 3px 5px 0px rgba(0, 0, 0, 0.5);
 }
 
-#conheca-wpp {
-    margin: 0 auto;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 10px;
-    width: 290px;
-    height: 70px;
-    box-sizing: border-box;
-    width: 309px;
-    height: 68px;
-    background: #FFFFFF;
-    color: #000000;
-    border: 1px solid #000000;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    border-radius: 30px;
+@media(max-width: 600px) {
+
+    .whatsapp-link {
+        position: fixed;
+        width: 50px;
+        height: 50px;
+        bottom: 10px !important;
+        right: 20px !important;
+        background-color: #25d366;
+        color: #FFFFFF;
+        border-radius: 50px;
+        text-align: center;
+        font-size: 30px;
+        box-shadow: 1px 1px 2px #888;
+        z-index: 9000;
+        transform: scale(1);
+        animation: pulse 2s infinite;
+    }
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(0.95);
+        box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.7);
+    }
+
+    70% {
+        transform: scale(1);
+        box-shadow: 0 0 0 10px rgba(0, 0, 0, 0);
+    }
+
+    100% {
+        transform: scale(0.95);
+        box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+    }
+}
+
+.whatsapp-link {
+    position: fixed;
+    width: 80px;
+    height: 80px;
+    bottom: 40px;
+    right: 40px;
+    background-color: #25d366;
+    color: #FFFFFF;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 40px;
+    box-shadow: 1px 1px 2px #888;
+    z-index: 9000;
+    transform: scale(1);
+    animation: pulse 2s infinite;
+}
+
+.whatsapp-link:hover {
+    background-color: #fff;
+    color: #22D829;
+}
+
+#whatsapp {
+    position: relative;
+    bottom: -13px;
+
 }
 
 /*Footer*/
@@ -256,7 +306,6 @@ img {
 
 /* formulario */
 #fundoForm {
-    /* background: linear-gradient(180deg, #B49C73 50%, #37373F 50%); */
     background-image: url(../../assets/img/banner.png);
     max-width: 100vw;
     background-position: center center;
@@ -264,8 +313,6 @@ img {
     background-repeat: no-repeat;
     height: 500px;
     margin-top: 100px;
-    /* margin-bottom: 100px; alterar */
-    /* height: 600px; */
 }
 
 .container-horario {
@@ -329,12 +376,6 @@ img {
     color: #000000;
 }
 
-/* 
-.bg-appointment {
-    background: linear-gradient(rgba(55, 55, 63, 0.7), rgba(55, 55, 63, 0.7)), url(../img/carousel-1.jpg), no-repeat center center;
-    background-size: cover;
-} */
-
 .agendadar-form .item {
     box-sizing: border-box;
     display: flex;
@@ -376,19 +417,20 @@ img {
     font-style: normal;
     font-size: 45px;
     line-height: 58px;
+    margin-top: 100px;
     color: black;
 }
 
 .fundo-feedback {
     background-color: #f1f1f1;
     max-width: 100vw;
-    /* max-height: 7000px; */
     margin-bottom: 60px;
 }
 
 .flex-container {
     display: flex;
-    margin-top: 130px;
+    margin: 0 auto;
+    margin-top: 200px;
 }
 
 .flex-container .comentario-clientes1 {
@@ -514,17 +556,6 @@ img {
     margin-bottom: 100px;
     /* margin: 0 0 100px 0; */
 }
-
-/* .container {
-    width: 1000px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 0 auto;
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 1000px;
-} */
 
 .container .card {
     position: relative;
@@ -719,7 +750,7 @@ i {
     border: #30aed6 solid 3px;
 }
 
- /* icones ---------------------------------- */
+/* icones ---------------------------------- */
 #name {
     background-image: url();
     background-size: 30px 30px;
@@ -748,6 +779,7 @@ i {
     background-position: 11px 8px;
     background-repeat: no-repeat;
 }
+
 /* 
 #comment {
     background-image: url();
@@ -811,7 +843,7 @@ textarea:focus {
 .submit:hover .ease {
     width: 100%;
     background-color: white;
-} 
+}
 
 @media only screen and (max-width: 580px) {
     #form-div {
@@ -851,7 +883,7 @@ body {
     height: 550px;
 }
 
-#atuacao-direito{
+#atuacao-direito {
     position: relative;
     width: 500px;
     height: 500px;
@@ -861,55 +893,56 @@ body {
     border-radius: 10px;
     overflow: hidden;
     box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+    margin-top: 100px;
 }
 
-.formulario-contato{
-position: absolute;
-width: 350px;
-height: 600px;
-background: #37373F;
-right: 550px;
-box-shadow: -2px 4px 8px rgba(0, 0, 0, 0.4);
-border-radius: 12px;
-bottom: -1440px;
-top: 1735px;
+.informacoes {
+    margin-left: 20px;
+    margin-right: 20px;
+    color: #37373F;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* form.form-contato {
-    width: 250px;
-    height: 360px;
-}
-
-form.form-contato h2 {
-    font-size: 25px;
-    font-weight: 600;
-    color: #303030;
-    margin-bottom: 30px;
-}
-
-form.form-contato .informacoes {
+.form-name {
+    font-weight: 700;
     display: flex;
+    font-family: 'Poppins';
+    margin-left: 20px;
+    margin-top: 30px;
+    font-size: 40px;
+    color: white;
+    margin-bottom: 40px;
+    line-height: 27px;
+    max-width: 100vw;
     flex-direction: column;
+    margin-bottom: 70px;
 }
 
 form.form-contato label {
+    width: 37px;
+    height: 14px;
+    left: 259px;
+    top: 290px;
+    font-family: 'Roboto';
+    font-style: normal;
     font-weight: 600;
+    font-size: 12px;
+    line-height: 14px;
+    /* identical to box height */
+    letter-spacing: 0.015em;
+    color: #fff;
+}
+
+.formulario-contato {
+    position: absolute;
+    width: 350px;
+    height: 600px;
+    background-color: #37373F;
+    right: 550px;
+    box-shadow: -2px 4px 8px rgba(0, 0, 0, 0.4);
+    border-radius: 12px;
+    bottom: -1440px;
+    top: 1735px;
+    margin-top: 100px;
 }
 
 form.form-contato input,
@@ -920,12 +953,60 @@ form.form-contato textarea {
 
     border: none;
     border-bottom: 2px solid #D1D1D1;
-
     font-family: 'Open sans';
     color: #5A5A5A;
     font-size: 14px;
     font-weight: 400;
 }
+
+input[type=text] {
+    border: none;
+    border-bottom: 2px solid red;
+}
+
+.nome-card1 {
+    font-weight: 700;
+    font-family: 'Poppins';
+    border-left-width: 27px;
+    margin-left: 27px;
+    margin-top: 30px;
+    font-size: 40px;
+    color: #000000;
+
+}
+
+/* .info_tilte {
+    font-family: 'Poppins';
+    margin-top: 20px;
+    margin-left: 27px;
+}
+
+.info_tilte1 {
+    font-family: 'Poppins';
+    margin-top: 20px;
+    margin-left: 100px;
+}
+
+.info_tilte2 {
+    font-family: 'Poppins';
+    margin-top: 20px;
+    margin-left: 27px;
+} */
+
+/* .info_title1 img {
+    height: 60px;
+    margin-left: 30px
+}
+
+.info_tilte2 img {
+    height: 60px;
+    margin-left: 30px
+}
+
+.info_tilte2 img {
+    height: 60px;
+    margin-left: 30px
+} */
 
 form.form-contato textarea {
     max-width: 100%;
@@ -935,13 +1016,11 @@ form.form-contato textarea {
 
 form.form-contato #btnSend {
     width: 180px;
-    background: #5A5A5A;
+    background: #F9B15D;
     padding: 10px;
     border: none;
     border-radius: 25px;
-
     align-self: flex-end;
-
     color: #fff;
     font-family: 'Open sans';
     font-size: 16px;
@@ -950,73 +1029,122 @@ form.form-contato #btnSend {
 }
 
 form.form-contato #btnSend:hover {
-    background: #3371B6;
-} */
+    background: #F9B15D;
+}
 
+.maps {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    height: 300px;
+    /* border-radius: 20px 20px 0px 0px; */
+    /* box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px; */
+    margin-bottom: 150px;
+    width: 1000px;
+}
 
+.maps-nome {
+    margin-bottom: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
+.google-maps h1 {
+    font-size: 40px;
+    margin-bottom: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
+.input {
+    line-height: 28px;
+    border: 2px solid transparent;
+    border-bottom-color: #777;
+    padding: .2rem 0;
+    outline: none;
+    background-color: transparent;
+    color: #0d0c22;
+    transition: .3s cubic-bezier(0.645, 0.045, 0.355, 1);
+}
 
-/* Ventana de errores
-  .modal_wrap{
-      width: 100%;
-      height: 100vh;
-      background: rgba(0,0,0,0.7);
-  
-      position: fixed;
-      top: 0;
-      left: 0;
-      z-index: 3;
-  
-      display: flex;
-      justify-content: center;
-      align-items: center;
-  }
-  
-  .mensaje_modal{
-      background: #fff;
-      box-shadow: 0px 0px 15px rgba(0,0,0,0.5);
-      width: 400px;
-      padding: 30px 20px 15px;
-  }
-  
-  .mensaje_modal h3{
-      text-align: center;
-      font-family: 'Ubuntu';
-      font-size: 20px;
-      font-weight: 400;
-  }
-  
-  .mensaje_modal h3:after{
-      content: '';
-      display: block;
-      width: 100%;
-      height: 1px;
-      background: #C5C5C5;
-      margin: 10px 0px 15px;
-  }
-  
-  .mensaje_modal p{
-      font-size: 16px;
-      color: #606060;
-  }
-  
-  .mensaje_modal p:before{
-      content: "\f00d";
-      font-family: FontAwesome;
-      display: inline-block;
-      color: #E25151;
-      margin-right: 8px;
-  }
-  
-  #btnClose{
-      display: inline-block;
-      padding: 3px 10px;
-      margin-top: 10px;
-  
-      background: #E25151;
-      color: #fff;
-      border: 2px solid #B14141;
-      cursor: pointer;  
-  }
-   */
+.input:focus,
+input:hover {
+    outline: none;
+    padding: .2rem 1rem;
+    border-radius: 1rem;
+    border-color: #7a9cc6;
+}
+
+.input::placeholder {
+    color: #F9B15D;
+}
+
+.input:focus::placeholder {
+    opacity: 0;
+    transition: opacity .3s;
+}
+
+/* From uiverse.io by @nikk7007 */
+.button {
+    --color: #F9B15D;
+    padding: 0.8em 1.7em;
+    background-color: transparent;
+    border-radius: .3em;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    transition: .5s;
+    font-weight: 400;
+    font-size: 17px;
+    border: 1px solid;
+    font-family: inherit;
+    text-transform: uppercase;
+    color: var(--color);
+    left: 100px;
+    margin-top: 20px;
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+    z-index: 1;
+}
+
+.button::before,
+.button::after {
+    content: '';
+    display: block;
+    width: 50px;
+    height: 50px;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    border-radius: 50%;
+    z-index: -1;
+    background-color: var(--color);
+    transition: 1s ease;
+}
+
+.button::before {
+    top: -1em;
+    left: -1em;
+}
+
+.button::after {
+    left: calc(100% + 1em);
+    top: calc(100% + 1em);
+}
+
+.button:hover::before,
+.button:hover::after {
+    height: 410px;
+    width: 410px;
+}
+
+.button:hover {
+    color: rgb(10, 25, 30);
+}
+
+.button:active {
+    filter: brightness(.8);
+}

@@ -4,23 +4,26 @@
 <head>
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="./style.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+  <!-- ionicons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
   <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
     integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+  <!-- CSS -->
+  <link rel="stylesheet" href="./style.css" />
   <link rel="stylesheet" href="../../../mobile/style.css">
   <title>Home</title>
 </head>
 
 <body>
-  <div class="superinfo-bg">
-    <div class="superinfo-items">
-      <p>Seg / Sex - 08:00 às 18:00</p>
-      <a href="tel:+556186184617"><span>Telefone: </span>(61)8618-4617</a>
-      <a href=""><span>E-mail: </span></a>
-    </div>
-  </div>
   <header class="menu-bg">
+    <div class="superinfo-bg">
+      <div class="superinfo-items">
+        <p>Seg / Sex - 08:00 às 18:00</p>
+        <a href="tel:+556186184617"><span>Telefone: </span>(61)8618-4617</a>
+        <a href=""><span>E-mail: </span></a>
+      </div>
+    </div>
     <div class="menu">
       <div class="logo">
         <a href="">Logo</a>
@@ -51,7 +54,7 @@
     </section>
     <section class="section-saiba">
       <div class="section-img">
-        <img src="../../assets/img/Rectangle 32.png">
+        <img src="../../assets/img/homeImg/Rectangle 32.png">
       </div>
       <div class="info">
         <h1 id="exp">6 anos de experiência</h1>
@@ -61,53 +64,65 @@
     </section>
 
     <section class="section-conheca">
+      <h1>Conheça nosso advogado</h1>
       <div class="conheca-bg">
-        <img src="../../assets/img/Rectangle 28.png" alt="">
-        <a id="conheca-wpp" href="https://api.whatsapp.com/send?phone=5561993562546&text=Preciso de auxílio!"
-          target="_blank">FALE AGORA COM UM ADVOGADO</a>
+        <img src="../../assets/img/homeImg/Rectangle 28.png" alt="">
       </div>
     </section>
     <section class="section-form"></section>
     <section class="section-criticas"></section>
+    <!-- Whatsapp-->
+    <a class="whatsapp-link" href="https://api.whatsapp.com/send?phone=556186184617&text=Olá" target="_blank">
+      <i class="icon ion-social-whatsapp" id="whatsapp"></i>
+    </a>
 
     <!-- Formulario agendamento -->
     <section class="formulario-agendamento">
       <div id="atuacao-direito">
         <section class="form_wrap">
+          <h2 class="nome-card1">Contate-nos</h2>
           <section class="cantact_info">
-            <section class="info_title">
-              <span class="fa fa-user-circle"></span>
-              <h2>Informações<br>De Contato</h2>
+            <section class="info_title0">
+              <!-- <div class="info-title">
+                <p>endereço-
+                </p>
+                <img src="../../assets/img/homeImg/maps.svg">
+              </div>
+              <div class="info-title1">
+                <p>(61)993562546</p>
+                <img src="../../assets/img/homeImg/telefone.svg">
+              </div>
+              <div class="info-title2">
+                <img src="../../assets/img/homeImg/email.svg">
+                <p>vitorhugo1524@gmail.com</p>
+              </div> -->
             </section>
             <section class="info_items">
-              <p><span class="fa fa-envelope"></span> teste@gmail.com</p>
-              <p><span class="fa fa-mobile"></span> (61)993562546</p>
+            </section>
+          </section>
+        </section>
       </div>
-    </section>
-    </section>
-    <div class="formulario-contato">
-      <form action="" class="form-contato">
-        <h2>Envie uma mensagem</h2>
-        <div class="informacoes">
-          <label for="names">Nomes</label>
-          <input type="text" id="names">
 
-          <label for="phone">Telefone / Celular</label>
-          <input type="text" id="phone">
 
-          <label for="email">E-mail</label>
-          <input type="text" id="email">
+      <div class="formulario-contato">
+        <form action="" class="form-contato">
+          <h2 class="form-name">Envie-nos uma mensagem</h2>
+          <div class="informacoes">
+            <label for="names">Nomes</label>
+            <input placeholder="" type="text" class="input" required="">
+            <label for="phone">Telefone / Celular</label>
+            <input placeholder="" type="text" class="input" required="">
+            <label for="email">E-mail</label>
+            <input placeholder="" type="text" class="input" required="">
+            <label for="mensaje">Mensagem</label>
+            <input placeholder="" type="text" class="input" required="">
+            <button class="button"> Button
+            </button>
+          </div>
 
-          <label for="mensaje">Mensagem</label>
-          <textarea id="mensaje"></textarea>
-
-          <input type="button" value="Enviar Mensagem" id="btnSend">
-        </div>
-    </div>
-    </div>
-    </form>
-
-    </section>
+      </div>
+      </div>
+      </form>
     </section>
     <!-- Fim formulario-agendamento -->
 
@@ -194,12 +209,23 @@
       </div>
     </div>
 
+    <section class="google-maps">
+      <h1>Saiba como nos encontrar!</h1>
+      <div class="maps">
+        <!-- <h1 class="maps-nome">Onde nos encontrar?</h1> -->
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15339.616150676631!2d-48.0656846!3d-16.0185102!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x340a250cf9255811!2sEdif%C3%ADcio%20Central!5e0!3m2!1spt-BR!2sbr!4v1657755802921!5m2!1spt-BR!2sbr"
+          width="1000" height="300" style="border-radius: 20px 20px 0px 0px;     box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+        " allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+    </section>
+
+
     <footer class="footer-bg">
       <div class="container-footer">
         <div class="footer-contato">
 
           <h2>Nosso escritório</h2>
-
 
           <h2>E-mail</h2>
 
@@ -233,6 +259,7 @@
       </div>
     </footer>
   </main>
+  <script src="../../../mobile/mobile-navbar.js"></script>
 </body>
 
 </html>
