@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap");
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&family=Roboto&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&family=Roboto&display=swap");
 
 /*Reset*/
 body,
@@ -39,7 +39,6 @@ img {
 .superinfo-bg {
   background-color: #b49c73;
   color: #fff;
-
 }
 
 .superinfo-items {
@@ -60,14 +59,18 @@ img {
   margin: 0 10px 10px 10px;
 }
 
-
 /*Header*/
 
+.nav-logo {
+  width: 180px;
+  height: 100px;
+}
 .menu-bg {
   background-color: #fff;
   position: fixed;
   width: 100vw;
   top: 0;
+  z-index: 3;
 }
 
 .menu {
@@ -94,7 +97,6 @@ img {
   flex-wrap: wrap;
   display: flex;
 }
-
 .header-content a {
   font-size: 1.25em;
   display: block;
@@ -134,9 +136,9 @@ h6,
 }
 
 a {
-  -webkit-transition: .3s all ease;
-  -o-transition: .3s all ease;
-  transition: .3s all ease;
+  -webkit-transition: 0.3s all ease;
+  -o-transition: 0.3s all ease;
+  transition: 0.3s all ease;
 }
 
 a,
@@ -170,10 +172,9 @@ h3 {
 }
 
 #contForm {
-  background-color: #37373F;
+  background-color: #37373f;
   /* margin-bottom: 1200; */
   /* border: 1px solid #FFFFFF; */
-
 }
 
 .form-control:active,
@@ -195,7 +196,7 @@ h3 {
 
 .heading {
   color: #888;
-  letter-spacing: .05rem;
+  letter-spacing: 0.05rem;
   text-transform: uppercase;
   font-weight: 400;
 }
@@ -224,7 +225,6 @@ h3 {
   background: #fff;
   -webkit-box-shadow: 0 15px 30px 0 rgba(0, 0, 0, 0.2);
   box-shadow: 0 15px 30px 0 rgba(0, 0, 0, 0.2);
-
 }
 
 .box h3 {
@@ -248,11 +248,11 @@ label.error {
 }
 
 #form-message-warning {
-  color: #B90B0B;
+  color: #b90b0b;
 }
 
 #form-message-success {
-  color: #55A44E;
+  color: #55a44e;
   font-size: 18px;
   font-weight: bold;
   text-align: center;
@@ -380,8 +380,7 @@ label.error {
 }
 
 /* Whatsapp*/
-@media(max-width: 600px) {
-
+@media (max-width: 600px) {
   .whatsapp-link {
     position: fixed;
     width: 50px;
@@ -389,7 +388,7 @@ label.error {
     bottom: 10px !important;
     right: 20px !important;
     background-color: #25d366;
-    color: #FFFFFF;
+    color: #ffffff;
     border-radius: 50px;
     text-align: center;
     font-size: 30px;
@@ -424,7 +423,7 @@ label.error {
   bottom: 40px;
   right: 40px;
   background-color: #25d366;
-  color: #FFFFFF;
+  color: #ffffff;
   border-radius: 50px;
   text-align: center;
   font-size: 40px;
@@ -436,11 +435,10 @@ label.error {
 
 .whatsapp-link:hover {
   background-color: #fff;
-  color: #22D829;
+  color: #22d829;
 }
 
 #whatsapp {
   position: relative;
   bottom: -13px;
-
 }
