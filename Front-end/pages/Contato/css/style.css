@@ -1,44 +1,84 @@
 body {
   font-family: "Roboto", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  color: #999;
-  line-height: 2;
-  /* background-color: #143373; */
-  /* background-image: -o-linear-gradient(330deg, #143373 0%, #123C73 100%);
-  background-image: linear-gradient(120deg, #143373 0%, #123C73 100%); */
 }
-
-
 /* Navbar*/
-nav {
-  height: 105px;
-  line-height: 105px;
-  /* background-image: linear-gradient(120deg, #fff 0%, #fff 100%); */
+.superinfo-bg {
+    background-color: #b49c73;
+    color: #fff;
 }
 
-nav ul a {
-  color: #000000;
-  font-size: 18px;
-  font-weight: bold;
-  margin-left: 15px;
+.superinfo-items {
+    max-width: 960px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding-top: 10px;
 }
 
-.nav-wrapper img {
-  width: 310px;
-  height: 85px;
-
+.superinfo-items a {
+    color: #eeeded;
 }
 
-nav .btn {
-  color: #fff;
-  background-color: #143373;
-  border-radius: 12px;
+.superinfo-items a,
+.superinfo-items p {
+    margin: 0 10px 10px 10px;
 }
 
-.btn:hover {
-  opacity: 1;
-  background-color: #010D26;
+/*Header*/
+.menu-bg {
+    background-color: #fff;
+    position: fixed;
+    width: 100vw;
+    top: 0;
 }
 
+.menu {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 15px 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu a {
+    color: #37373f;
+}
+
+.logo {
+    font-size: 2.25em;
+    font-weight: bold;
+    margin: 0 10px;
+}
+
+.header-content ul {
+    flex-wrap: wrap;
+    display: flex;
+}
+
+.header-content a {
+    font-size: 1.25em;
+    display: block;
+    padding: 10px;
+}
+
+.header-content a:hover {
+    opacity: 0.8;
+    transform: scale(1.1);
+}
+
+.is-active a {
+    color: #fff;
+    background-color: #B49C73;
+    font-weight: bold;
+    border-radius: 12px;
+}
+
+.is-active a:hover {
+    transform: scale(1.1);
+}
 
 h1,
 h2,
@@ -73,6 +113,7 @@ a:hover {
 
 .content {
   padding: 8rem 0;
+  z-index: -1;
 }
 
 h2 {
@@ -91,9 +132,10 @@ h3 {
   border-radius: 4px;
 }
 #contForm{
-  background-color: #143373;
+  background-color: #37373F;
   /* margin-bottom: 1200; */
   /* border: 1px solid #FFFFFF; */
+
 }
 .form-control:active,
 .form-control:focus {
@@ -143,6 +185,7 @@ h3 {
   background: #fff;
   -webkit-box-shadow: 0 15px 30px 0 rgba(0, 0, 0, 0.2);
   box-shadow: 0 15px 30px 0 rgba(0, 0, 0, 0.2);
+
 }
 
 .box h3 {
@@ -185,4 +228,104 @@ label.error {
   font-weight: bold;
   font-size: 12px;
   color: #000;
+}
+@media (max-width: 600px) {
+  body {
+    overflow-x: hidden;
+  }
+  .superinfo-items {
+    display: flex;
+    font-size: 12px;
+  }
+  .nav-list {
+    position: absolute;
+    top: 13.3vh;
+    right: 0;
+    width: 50vw;
+    height: 92vh;
+    background: #fff;
+    flex-direction: column;
+    align-items: center;
+    justify-content: top;
+    gap: 50px;
+    transform: translateX(100%);
+    transition: transform 0.3s ease-in;
+    z-index: 9900;
+  }
+  .nav-list li {
+    margin-top: 30px;
+    margin-left: 0;
+    opacity: 0;
+  }
+  .mobile-menu {
+    display: block;
+  }
+}
+.nav-list.active {
+  transform: translateX(0);
+}
+@keyframes navLinkFade {
+  from {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.mobile-menu.active .line1 {
+  transform: rotate(-45deg) translate(-8px, 8px);
+}
+
+.mobile-menu.active .line2 {
+  opacity: 0;
+}
+
+.mobile-menu.active .line3 {
+  transform: rotate(45deg) translate(-5px, -7px);
+}
+/*Footer*/
+.footer-bg {
+  background-color: #37373f;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
+
+.container-footer div {
+  max-width: 960px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  padding-top: 10px;
+  color: #fff;
+}
+
+.footer-contato {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.footer-contato h2 {
+  font-size: 1.25em;
+  display: block;
+  padding: 10px;
+}
+
+.footer-informacoes {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+.footer-item {
+  width: 290px;
+}
+
+.footer-informacoes div {
+  font-size: 0.75em;
+  display: block;
+  padding: 10px;
 }

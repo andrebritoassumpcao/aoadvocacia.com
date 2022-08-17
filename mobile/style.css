@@ -1,6 +1,7 @@
 body {
   overflow-x: hidden;
 }
+
 .mobile-menu {
   display: none;
   cursor: pointer;
@@ -23,10 +24,12 @@ body {
   body {
     overflow-x: hidden;
   }
+
   .superinfo-items {
     display: flex;
     font-size: 12px;
   }
+
   .nav-list {
     position: absolute;
     top: 13.3vh;
@@ -42,23 +45,28 @@ body {
     transition: transform 0.3s ease-in;
     z-index: 9900;
   }
+
   .nav-list li {
     margin-top: 30px;
     margin-left: 0;
     opacity: 0;
   }
+
   .mobile-menu {
     display: block;
   }
 }
+
 .nav-list.active {
   transform: translateX(0);
 }
+
 @keyframes navLinkFade {
   from {
     opacity: 0;
     transform: translateX(50px);
   }
+
   to {
     opacity: 1;
     transform: translateX(0);
@@ -78,266 +86,270 @@ body {
 }
 
 /* Página Home*/
-@media (max-width: 600px){
-#exp{
-  text-align: center;
-  background-color: rgba(255, 255, 255, 0.9);
-  font-size: 18px !important;
-  top: -110px;
-  left: auto !important;
-}
-<<<<<<< HEAD
-=======
-.info h1{
-  width: 260px;
-  font-size: 1.5em;
+@media (max-width: 600px) {
+  #exp {
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.9);
+    font-size: 18px !important;
+    top: -110px;
+    left: auto !important;
+  }
 
-}
->>>>>>> master
+  .info h1 {
+    width: 260px;
+    font-size: 1.5em;
+
+  }
 }
 
 /* Página Sobre*/
 @media (max-width: 600px) {
+
   /*Banner*/
-.section-banner {
-  height: 180px;
-}
- 
-.section-quem{
-  flex-direction: column ;
-}
-.text{
-  flex:1;
-}
-.text h1{
-<<<<<<< HEAD
-  margin: 0;
-=======
-  margin-bottom: 20px;
->>>>>>> master
-  text-align: center;
-  font-size: 26px;
-}
-.text p{
-  font-size: 16px;
-<<<<<<< HEAD
-=======
-  margin: 0;
-  text-align: left;
-  letter-spacing: 1px;
->>>>>>> master
-}
+  .section-banner {
+    height: 180px;
+  }
 
-.section-historia{
-  flex-direction: column-reverse;
-<<<<<<< HEAD
-  margin: 0 30px;
-=======
-  margin: 0 20px;
-  
->>>>>>> master
-}
-.historia_text h1{
-  font-size: 26px;
-}
-.historia_text p{
-  font-size: 16px;
-<<<<<<< HEAD
-}
-}
+  .section-quem {
+    flex-direction: column;
+  }
 
-/* formulario de contato */
-@media (max-width: 600px) {
-  body {
-    overflow-x: hidden;
+  .text {
+    flex: 1;
   }
-  form.form-contato{
-      width: 62%;
-      padding: 30px 40px;
+
+  .text h1 {
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 26px;
   }
-  
-  form.form-contato h2{
-      font-size: 25px;
-      font-weight: 600;
-      color: #303030;
-      margin-bottom: 30px;
+
+  .text p {
+    font-size: 16px;
+    margin: 0;
+    text-align: left;
+    letter-spacing: 1px;
   }
-  
-  form.form-contato .informacoes{
-      display: flex;
-      flex-direction: column;
+
+  .section-historia {
+    flex-direction: column-reverse;
+    margin: 0 20px;
+
   }
-  
-  form.form-contato label{
-      font-weight: 600;
+
+  .historia_text h1 {
+    font-size: 26px;
   }
-  
-  form.form-contato input,
-  form.form-contato textarea{
-      width: 100%;
-      padding: 8px 0px 5px;
+
+  .historia_text p {
+    font-size: 16px;
+    margin: 0;
+    text-align: left;
+    letter-spacing: 1px;
+  }
+
+  .historia_img {
+    width: 380px;
+  }
+
+  /*Especialidades*/
+  .section-especialidades h1 {
+    font-size: 1.5em;
+  }
+
+  .flex-container {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 1500px;
+  }
+
+  .item {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-around;
+    box-sizing: border-box;
+    width: 120px;
+    height: 120px;
+    margin: 20px;
+    margin-top: 30px;
+    border: 2px solid #ffffff;
+    box-shadow: 6px 6px 4px 1px rgba(255, 255, 255, 0.25);
+  }
+
+  .item img {
+    margin: 0 auto;
+    width: 28px;
+    height: 28px;
+  }
+
+  .item h2 {
+    color: #fff;
+    margin: 10px;
+    font-size: 0.8em;
+  }
+
+  .especialidades-button {
+    color: #000000;
+    margin: 10px auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    font-family: "Inter", sans-serif;
+    font-size: 16px;
+    width: 185px;
+    height: 50px;
+    background: #f9b15d;
+    border: 1px solid #000000;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 12px;
+  }
+
+  .especialidades-button img {
+    margin-left: 15px;
+    width: 18px;
+    height: 18px;
+  }
+
+  /*Footer*/
+  .footer-bg {
+    background-color: #37373f;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+  }
+
+  .container-footer div {
+    max-width: 960px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 10px;
+    color: #fff;
+  }
+
+  .footer-contato {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .footer-contato h2 {
+    font-size: 1em;
+    display: block;
+    padding: 10px;
+  }
+
+  .footer-informacoes {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+  }
+
+  .footer-item {
+    width: 160px;
+  }
+
+  .footer-item p {
+    font-size: 12px;
+  }
+
+  .footer-informacoes div {
+    font-size: 0.75em;
+    display: block;
+    padding: 10px;
+  }
+
+  #social-item {
+    color: white;
+    font-size: 28px;
+    margin: 10px;
+  }
+
+  .social {
+    display: flex;
+    flex-direction: row;
+    height: 80px;
+    width: 180px;
+    margin: 0 !important;
+  }
+
+  /* feedback Clientes Responsive columns */
+  @media screen and (max-width: 1000px) {
+    .column {
+      width: 50%;
+      display: block;
       margin-bottom: 20px;
-  
-      border: none;
-      border-bottom: 2px solid #D1D1D1;
-  
-      font-family: 'Open sans';
-      color: #5A5A5A;
-      font-size: 14px;
-      font-weight: 400;
+    }
   }
-  
-  form.form-contato textarea{
-      max-width: 100%;
-      min-width: 100%;
-      max-height: 90px;
+
+  @media screen and (max-width: 600px) {
+    .column {
+      width: 50%;
+      display: block;
+      margin-bottom: 20px;
+    }
+    .nossos-service {
+      font-size: 26px;
+    }
   }
-  
-  form.form-contato #btnSend{
-      width: 180px;
-      background: #5A5A5A;
-      padding: 10px;
-      border: none;
-      border-radius: 25px;
-  
-      align-self: flex-end;
-  
-      color: #fff;
-      font-family: 'Open sans';
-      font-size: 16px;
-      font-weight: 600;
-      cursor: pointer;
+
+  /* /Media Query Google maps/ */
+  @media screen and (max-width: 600px) {
+    .maps {
+      width: 300px;
+    }
+
+    .google-maps h1 {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 25px;
+    }
   }
-  
-  form.form-contato #btnSend:hover{
-      background: #3371B6;
+
+  /* /fim media query google-maps/ */
+
+  /* /Inicio media query formulario/ */
+  @media screen and (max-width: 600px) {
+    .formulario-contato {
+      width: 350px;
+      right: 0;
+      margin-bottom: 100px;
+      display: block;
+    }
   }
-  
 
-=======
-  margin: 0;
-  text-align: left;
-  letter-spacing: 1px;
-}
+  @media screen and (max-width: 1000px) {
+    .formulario-contato {
+      width: 350px;
+      right: 0;
+      margin-bottom: 100px;
+    }
+  }
 
-.historia_img{
-  width: 380px;
-}
-
-/*Especialidades*/
-.section-especialidades h1 {
-  font-size: 1.5em;
-}
-.flex-container {
-  align-items: center;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  max-width: 1500px;
-}
-.item {
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  justify-content: space-around;
-  box-sizing: border-box;
-  width: 120px;
-  height: 120px;
-  margin: 20px;
-  margin-top: 30px;
-  border: 2px solid #ffffff;
-  box-shadow: 6px 6px 4px 1px rgba(255, 255, 255, 0.25);
-}
-.item img {
-  margin: 0 auto;
-  width: 28px;
-  height: 28px;
-}
-.item h2 {
-  color: #fff;
-  margin: 10px;
-  font-size: 0.8em;
-}
-.especialidades-button {
-  color: #000000;
-  margin: 10px auto;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  font-weight: bold;
-  font-family: "Inter", sans-serif;
-  font-size: 16px;
-  width: 185px;
-  height: 50px;
-  background: #f9b15d;
-  border: 1px solid #000000;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  border-radius: 12px;
-}
-.especialidades-button img {
-  margin-left: 15px;
-  width: 18px;
-  height: 18px;
-}
-/*Footer*/
-.footer-bg {
-  background-color: #37373f;
-  position: relative;
-  bottom: 0;
-  width: 100%;
+  @media (max-width: 600px) {
+    #atuacao-direito {
+      display: flex;
+      width: 350px;
+      font-size: 30px;
+      display: none;
+    }
+    .card-nome h1 {
+      font-size: 25px;
+      margin-top: 200px
+    }
+    .container{
+      display: block;
+      flex-direction: column;
+      justify-content: space-between;
+      height: 50%;
+  }
 }
 
-.container-footer div {
-  max-width: 960px;
-  margin: 0 auto;
-  display: flex;
-  flex-wrap: wrap;
-  padding-top: 10px;
-  color: #fff;
-}
-
-.footer-contato {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-}
-
-.footer-contato h2 {
-  font-size: 1em;
-  display: block;
-  padding: 10px;
-}
-
-.footer-informacoes {
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
-}
-.footer-item {
-  width: 160px;
-}
-.footer-item p{
-  font-size: 12px;
-}
-
-.footer-informacoes div {
-  font-size: 0.75em;
-  display: block;
-  padding: 10px;
-}
-#social-item{
-  color: white;
-  font-size: 28px;
-  margin: 10px;
-}
-.social{
-  display: flex;
-  flex-direction: row;
-  height: 80px;
-  width: 180px;
-  margin: 0 !important;
-}
->>>>>>> master
 }
