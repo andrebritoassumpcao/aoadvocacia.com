@@ -1,7 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap");
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&family=Roboto&display=swap');
-
 /*Reset*/
 body,
 h1,
@@ -10,142 +9,134 @@ p,
 ul,
 li,
 a {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
 body {
-    font-family: "Inter", sans-serif;
+  font-family: "Inter", sans-serif;
 }
-
 ul {
-    list-style: none;
+  list-style: none;
 }
-
 a {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 img {
-    display: block;
-    max-width: 100%;
+  display: block;
+  max-width: 100%;
 }
-
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 /*Superinfo*/
 .superinfo-bg {
-    background-color: #b49c73;
-    color: #fff;
+  background-color: #b49c73;
+  color: #fff;
+ 
 }
-
 .superinfo-items {
-    max-width: 960px;
-    margin: 0 auto;
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    padding-top: 10px;
+  max-width: 960px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding-top: 10px;
 }
-
 .superinfo-items a {
-    color: #eeeded;
+  color: #eeeded;
 }
-
 .superinfo-items a,
 .superinfo-items p {
-    margin: 0 10px 10px 10px;
+  margin: 0 10px 10px 10px;
 }
 
 /*Header*/
+
 .menu-bg {
-    background-color: #fff;
-    position: fixed;
-    width: 100vw;
-    top: 0;
+  background-color: #fff;
+  position: fixed;
+  width: 100vw;
+  top: 0;
 }
 
 .menu {
-    max-width: 960px;
-    margin: 0 auto;
-    padding: 15px 0;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 15px 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .menu a {
-    color: #37373f;
+  color: #37373f;
 }
 
 .logo {
-    font-size: 2.25em;
-    font-weight: bold;
-    margin: 0 10px;
+  font-size: 2.25em;
+  font-weight: bold;
+  margin: 0 10px;
 }
 
 .header-content ul {
-    flex-wrap: wrap;
-    display: flex;
+  flex-wrap: wrap;
+  display: flex;
 }
-
 .header-content a {
-    font-size: 1.25em;
-    display: block;
-    padding: 10px;
+  font-size: 1.25em;
+  display: block;
+  padding: 10px;
 }
 
 .header-content a:hover {
-    opacity: 0.8;
-    transform: scale(1.1);
+  opacity: 0.8;
+  transform: scale(1.1);
 }
 
 .is-active a {
-    color: #fff;
-    background-color: #B49C73;
-    font-weight: bold;
-    border-radius: 12px;
+  color: #fff;
+  background-color: #37373f;
+  font-weight: bold;
+  border-radius: 12px;
 }
 
 .is-active a:hover {
-    transform: scale(1.1);
+  transform: scale(1.1);
 }
 
 /*Banner*/
 .section-banner {
-    background-image: url(../../assets/img/homeImg/banner.png);
-    max-width: 100vw;
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    height: 623px;
-    margin-top: 120px;
-    margin-bottom: 10px;
+  background-image: url(../../assets/img/homeImg/banner.png);
+  max-width: 100vw;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 623px;
+  margin-top: 120px;
+  margin-bottom: 10px;
 }
-
 /*Saiba*/
 .section-saiba {
-    max-width: 960px;
-    margin: 0 auto;
-    border-top: 2px solid #37373f;
-    border-bottom: 2px solid #37373f;
-    padding: 60px 0;
-    display: flex;
-    flex-wrap: wrap;
+  max-width: 960px;
+  margin: 0 auto;
+  border-top: 2px solid #37373f;
+  border-bottom: 2px solid #37373f;
+  padding: 60px 0;
+  display: flex;
+  flex-wrap: wrap;
 }
-
 .section-img {
-    flex: 1 1 160px;
-    margin: 0 10px;
+  flex: 1 1 160px;
+  margin: 0 10px;
 }
-
-#exp {
+#exp{
     position: relative;
     top: -20px;
-    box-shadow: 2px 3px 5px 0px rgba(0, 0, 0, 0.5);
+    box-shadow: 2px 3px 5px 0px rgba(0,0,0,0.5);
     width: 290px;
     left: -150px;
     padding: 10px;
@@ -155,21 +146,19 @@ img {
 }
 
 .info {
-    flex: 2 1 300px;
-    margin: 0 10px;
+  flex: 2 1 300px;
+  margin: 0 10px;
 }
-
-.info h1 {
+.info h1{
     font-size: 2.5em;
     margin-top: 20px;
 }
-
-.info h2 {
+.info h2{
     font-size: 1.25em;
 }
 
 /*Conheca*/
-.section-conheca {
+.section-conheca{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -177,135 +166,142 @@ img {
     margin-top: 10px;
     max-width: 100vw;
     flex-direction: column;
-
+    
 }
-
-.conheca-bg {
-    background: linear-gradient(180deg, #B49C73 50%, #37373F 50%);
+.conheca-bg{
+    background: linear-gradient(180deg, #B49C73  50%, #37373F 50%);
     width: 100vw;
     height: 500px;
     margin-bottom: 10px;
     margin-top: 10px;
 }
-
-.conheca-bg img {
-    margin-top: 100px !important;
-    margin: 0 auto;
-    width: 220px;
-    height: 280px;
-    box-shadow: 2px 3px 5px 0px rgba(0, 0, 0, 0.5);
+.conheca-bg img{
+ margin-top: 100px !important;
+ margin: 0 auto;
+ width: 220px;
+ height: 280px;
+ box-shadow: 2px 3px 5px 0px rgba(0,0,0,0.5);
 }
 
-@media(max-width: 600px) {
-
-    .whatsapp-link {
-        position: fixed;
-        width: 50px;
-        height: 50px;
-        bottom: 10px !important;
-        right: 20px !important;
-        background-color: #25d366;
-        color: #FFFFFF;
-        border-radius: 50px;
-        text-align: center;
-        font-size: 30px;
-        box-shadow: 1px 1px 2px #888;
-        z-index: 9000;
-        transform: scale(1);
-        animation: pulse 2s infinite;
-    }
+ /* Whatsapp*/
+ @media(max-width: 600px){
+ 
+  .whatsapp-link{
+      position: fixed;
+      width: 50px;
+      height: 50px;
+      bottom: 10px !important;
+      right: 20px !important;
+      background-color: #25d366;
+      color: #FFFFFF;
+      border-radius: 50px;
+      text-align: center;
+      font-size: 30px;
+      box-shadow: 1px 1px 2px #888;
+      z-index: 9000;
+      transform: scale(1);
+      animation: pulse 2s infinite;
+      }
 }
 
 @keyframes pulse {
-    0% {
-        transform: scale(0.95);
-        box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.7);
-    }
-
-    70% {
-        transform: scale(1);
-        box-shadow: 0 0 0 10px rgba(0, 0, 0, 0);
-    }
-
-    100% {
-        transform: scale(0.95);
-        box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
-    }
+0% {
+  transform: scale(0.95);
+  box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.7);
 }
 
-.whatsapp-link {
-    position: fixed;
-    width: 80px;
-    height: 80px;
-    bottom: 40px;
-    right: 40px;
-    background-color: #25d366;
-    color: #FFFFFF;
-    border-radius: 50px;
-    text-align: center;
-    font-size: 40px;
-    box-shadow: 1px 1px 2px #888;
-    z-index: 9000;
-    transform: scale(1);
-    animation: pulse 2s infinite;
+70% {
+  transform: scale(1);
+  box-shadow: 0 0 0 10px rgba(0, 0, 0, 0);
 }
 
-.whatsapp-link:hover {
-    background-color: #fff;
-    color: #22D829;
+100% {
+  transform: scale(0.95);
+  box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
 }
-
-#whatsapp {
-    position: relative;
-    bottom: -13px;
-
 }
+.whatsapp-link{
+  position: fixed;
+  width: 80px;
+  height: 80px;
+  bottom: 40px;
+  right: 40px;
+  background-color: #25d366;
+  color: #FFFFFF;
+  border-radius: 50px;
+  text-align: center;
+  font-size: 40px;
+  box-shadow: 1px 1px 2px #888;
+  z-index: 9000;
+  transform: scale(1);
+  animation: pulse 2s infinite;
+  }
 
+  .whatsapp-link:hover{
+      background-color: #fff;
+      color: #22D829;
+  }
+
+  #whatsapp{
+      position: relative;
+      bottom: -13px;
+
+  }
 /*Footer*/
 .footer-bg {
-    background-color: #37373f;
-    position: relative;
-    bottom: 0;
-    width: 100%;
+  background-color: #37373f;
+  position: relative;
+  bottom: 0;
+  width: 100%;
 }
 
 .container-footer div {
-    max-width: 960px;
-    margin: 0 auto;
-    display: flex;
-    flex-wrap: wrap;
-    padding-top: 10px;
-    color: #fff;
+  max-width: 960px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  padding-top: 10px;
+  color: #fff;
 }
 
 .footer-contato {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 .footer-contato h2 {
-    font-size: 1.25em;
-    display: block;
-    padding: 10px;
+  font-size: 1.25em;
+  display: block;
+  padding: 10px;
 }
 
 .footer-informacoes {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
 }
-
 .footer-item {
-    width: 290px;
+  width: 290px;
 }
 
 .footer-informacoes div {
-    font-size: 0.75em;
-    display: block;
-    padding: 10px;
+  font-size: 0.75em;
+  display: block;
+  padding: 10px;
 }
-
+#social-item{
+  color: white;
+  font-size: 28px;
+  margin: 10px;
+}
+.social{
+  display: flex;
+  flex-direction: row;
+  height: 80px;
+  width: 180px;
+  margin: 0 !important;
+}
 /* Nossos Serviços Cards */
 .container {
     width: 1000px;
@@ -313,14 +309,15 @@ img {
     justify-content: center;
     align-items: center;
     margin: 0 auto;
+    display: flex;
     justify-content: space-between;
     margin-bottom: 100px;
     /* margin: 0 0 100px 0; */
 }
+
 .container .card {
     position: relative;
-    right: 0;
-    margin: 0;
+    border-radius: 10px;
 }
 
 .card-nome h1 {
@@ -453,10 +450,17 @@ i {
     text-decoration: none;
     color: #414141;
 }
-
-/* fim nossos serviços */
-
 /* FORMULARIO =================================== */
+#fundoForm {
+    background-image: url(../../assets/img/banner.png);
+    max-width: 100vw;
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-top: 100px;
+    height: 550px;
+}
+
 #atuacao-direito {
     position: relative;
     width: 500px;
@@ -468,7 +472,6 @@ i {
     overflow: hidden;
     box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
     margin-top: 100px;
-    z-index: -1;
 }
 
 .informacoes {
@@ -477,32 +480,10 @@ i {
     color: #37373F;
 }
 
-.formulario-contato h2 {
-    font-family: 'Poppins';
-    font-weight: 600;
-    font-size: 2.25rem;
-    letter-spacing: 0, 2em;
-    line-height: 50px !important;
-}
-
-.formulario-contato {
-    position: absolute;
-    width: 350px;
-    height: 600px;
-    background-color: #37373F;
-    right: 550px;
-    box-shadow: -2px 4px 8px rgba(0, 0, 0, 0.4);
-    border-radius: 12px;
-    bottom: -1440px;
-    top: 1735px;
-    margin-top: 100px;
-    z-index: -1;
-}
-
 .form-name {
     font-weight: 700;
     display: flex;
-    font-family: 'Roboto';
+    font-family: 'Poppins';
     margin-left: 20px;
     margin-top: 30px;
     font-size: 40px;
@@ -524,8 +505,22 @@ form.form-contato label {
     font-weight: 600;
     font-size: 12px;
     line-height: 14px;
+    /* identical to box height */
     letter-spacing: 0.015em;
     color: #fff;
+}
+
+.formulario-contato {
+    position: absolute;
+    width: 350px;
+    height: 600px;
+    background-color: #37373F;
+    right: 550px;
+    box-shadow: -2px 4px 8px rgba(0, 0, 0, 0.4);
+    border-radius: 12px;
+    bottom: -1440px;
+    top: 1735px;
+    margin-top: 100px;
 }
 
 form.form-contato input,
@@ -533,9 +528,10 @@ form.form-contato textarea {
     width: 100%;
     padding: 8px 0px 5px;
     margin-bottom: 20px;
+
     border: none;
     border-bottom: 2px solid #D1D1D1;
-    font-family: 'Roboto';
+    font-family: 'Open sans';
     color: #5A5A5A;
     font-size: 14px;
     font-weight: 400;
@@ -548,13 +544,19 @@ input[type=text] {
 
 .nome-card1 {
     font-weight: 700;
-    font-family: 'Roboto';
+    font-family: 'Poppins';
     border-left-width: 27px;
     margin-left: 27px;
     margin-top: 30px;
     font-size: 40px;
     color: #000000;
 
+}
+
+.info_tilte {
+    font-family: 'Poppins';
+    margin-top: 20px;
+    margin-left: 27px;
 }
 
 form.form-contato textarea {
@@ -571,7 +573,7 @@ form.form-contato #btnSend {
     border-radius: 25px;
     align-self: flex-end;
     color: #fff;
-    font-family: 'Roboto';
+    font-family: 'Open sans';
     font-size: 16px;
     font-weight: 600;
     cursor: pointer;
@@ -580,7 +582,31 @@ form.form-contato #btnSend {
 form.form-contato #btnSend:hover {
     background: #F9B15D;
 }
+/*Fim formulario-contato*/
+.maps {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    height: 300px;
+    margin-bottom: 150px;
+    width: 1000px;
+}
 
+.maps-nome {
+    margin-bottom: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.google-maps h1 {
+    font-size: 40px;
+    margin-bottom: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
 .input {
     line-height: 28px;
@@ -609,8 +635,6 @@ input:hover {
     opacity: 0;
     transition: opacity .3s;
 }
-
-/* From uiverse.io by @nikk7007 */
 .button {
     --color: #F9B15D;
     padding: 0.8em 1.7em;
@@ -628,7 +652,7 @@ input:hover {
     color: var(--color);
     left: 100px;
     margin-top: 20px;
-    /* z-index: 1; */
+    z-index: 1;
 }
 
 .button::before,
@@ -669,63 +693,49 @@ input:hover {
     filter: brightness(.8);
 }
 
-
 /*Novo Card FeedbackTeste*/
-/* Três colunas lado a ladoT */
 .column {
-    float: left;
-    width: 33.3%;
-    padding: 10px 10px;
+float: left;
+width: 33.3%;
+padding: 10px 10px;
 }
-
-.nossos-service {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 0 auto;
-    font-family: 'Calibri';
-    font-style: normal;
-    font-size: 45px;
-    line-height: 58px;
-    color: black;
-    margin-top: 150px;
+.nossos-service{
+display: flex;
+justify-content: center;
+align-items: center;
+margin: 0 auto;
+font-family: 'Calibri';
+font-style: normal;
+font-size: 45px;
+line-height: 58px;
+color: black;
+margin-top: 150px;
 }
-
-/* Remova margens esquerda e direita extras, devido ao preenchimento */
-.row {
-    margin: 0 -5px;
-}
+.row {margin: 0 -5px;}
 .row:after {
-    content: "";
-    display: table;
-    clear: both;
+content: "";
+display: table;
+clear: both;
 }
-
 .card1 {
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-    padding: 12px;
-    text-align: center;
-    background-color: #f1f1f1;
-    transition: 0.3s;
-    border-radius: 10px;
+padding: 12px;
+text-align: center;
 }
-
 .card1:hover {
-    box-shadow: 0 4px 30px 0 rgba(0, 0, 0, 0.4);
+box-shadow: 0 4px 30px 0 rgba(0,0,0,0.4);
 }
-
 .card1 img {
-    border-radius: 25px 25px 25px 25px;
-    width: 100px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 0 auto;
+border-radius: 25px 25px 25px 25px;
+width: 100px;
+display: flex;
+justify-content: center;
+align-items: center;
+margin: 0 auto;
 }
-
 /*fim card teste*/
-
-
+.info-title img{
+    margin-left: 27px;
+}
 /* card google maps */
 .maps {
     display: flex;
