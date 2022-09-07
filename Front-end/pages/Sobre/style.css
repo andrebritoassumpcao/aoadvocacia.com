@@ -13,6 +13,7 @@ a {
 
 body {
   font-family: "Inter", sans-serif;
+  background-color: #fff;
 }
 ul {
   list-style: none;
@@ -28,46 +29,24 @@ img {
 * {
   box-sizing: border-box;
 }
-
-/*Superinfo*/
-.superinfo-bg {
-  background-color: #b49c73;
-  color: #fff;
-}
-.superinfo-items {
-  max-width: 960px;
-  margin: 0 auto;
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  padding-top: 10px;
-}
-.superinfo-items a {
-  color: #eeeded;
-}
-.superinfo-items a,
-.superinfo-items p {
-  margin: 0 10px 10px 10px;
-}
-
 /*Header*/
 
+.nav-logo {
+  width: 160px;
+  height: 90px;
+}
 .menu-bg {
   background-color: #fff;
   position: fixed;
   width: 100vw;
   top: 0;
-}
-
-.nav-logo {
-  width: 180px;
-  height: 100px;
+  z-index: 3;
 }
 
 .menu {
-  max-width: 960px;
-  margin: 0 auto;
-  padding: 15px 0;
+  max-width: 980px;
+  margin: 0 110px;
+  padding: 10px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -79,9 +58,9 @@ img {
 }
 
 .logo {
-  font-size: 2.25em;
-  font-weight: bold;
-  margin: 0 10px;
+  width: 120px;
+  height: 100px;
+  margin: 0;
 }
 
 .header-content ul {
@@ -109,7 +88,6 @@ img {
 .is-active a:hover {
   transform: scale(1.1);
 }
-
 /*Banner*/
 .section-banner {
   background-image: url(../../assets/img/sobreImg/banner\ sobre\ 1.png);
