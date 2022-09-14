@@ -87,6 +87,24 @@ body {
 
 /* Página Home*/
 @media (max-width: 600px) {
+  /* Header */
+  .menu {
+    max-width: 980px;
+    margin: 0 10px;
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+  }
+  /*Especialidades*/
+  .section-especialidades {
+    text-align: center;
+    height: auto;
+    padding-bottom: 30px;
+    margin: 10px;
+  }
+
   #exp {
     text-align: center;
     background-color: rgba(255, 255, 255, 0.9);
@@ -95,15 +113,283 @@ body {
     left: auto !important;
   }
 
-  .info h1 {
-    width: 260px;
-    font-size: 1.5em;
-  }
   .section-conheca img {
     width: 90vw;
     height: 30vh;
     margin: 80px auto;
   }
+  /* Proposta */
+  .section-proposta {
+    position: relative;
+    text-align: center;
+    max-height: 1042px;
+    height: 500px;
+  }
+  .primeiro-fundo {
+    background-color: #37373f;
+    width: 100vw;
+    height: 250px;
+  }
+  .segundo-fundo {
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100vw;
+    height: 190px;
+  }
+  .section-proposta h1 {
+    position: relative;
+    top: 100px;
+    color: #eca72c;
+    padding: 10px 0;
+    font-size: 25px;
+  }
+  .section-proposta img {
+    margin: 0 auto;
+    width: 30px;
+    height: 40px;
+  }
+  .section-proposta article {
+    position: relative;
+    bottom: 295px;
+    margin: 0 auto;
+    display: flex;
+    gap: 3px;
+    flex-wrap: wrap;
+    max-width: 1260px;
+    justify-content: center;
+    align-items: center;
+  }
+  .section-proposta div {
+    text-align: center;
+    padding: 15px 10px;
+    background-color: #fff;
+    width: 112px;
+    height: 150px;
+    font-size: 10px;
+    border-radius: 5px;
+    margin: 30px auto;
+    z-index: 1;
+  }
+  /*Saiba*/
+  .section-saiba {
+    display: inline-block;
+    max-width: 1160px;
+    margin: 0 auto;
+    padding: 60px 0;
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  .section-saiba h3 {
+    color: #eca72c;
+    font-size: 18px;
+  }
+  .section-img {
+    height: 230px;
+    margin: 0 10px;
+  }
+
+  .info {
+    margin: 0 auto;
+    text-align: center;
+  }
+  .info h1 {
+    text-align: center;
+    font-size: 25px;
+    margin-top: 30px;
+    width: 100vw;
+  }
+  .info p {
+    margin: 0 20px;
+    text-align: left;
+    color: #37373f;
+    font-size: 12px;
+  }
+
+  /* FORMULARIO =================================== */
+  .fundo-form {
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+    background-color: #37373f;
+  }
+  #fundoForm {
+    background-image: url(../../assets/img/homeImg/imagemfundo-2.jpg);
+    max-width: 100vw;
+    height: 1600px;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  #atuacao-direito {
+    width: 280px;
+    height: 800px;
+    display: flex;
+    background: #fff;
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: -2px 4px 8px rgba(0, 0, 0, 0.4);
+    margin-top: 100px;
+    padding: 20px;
+  }
+
+  .informacoes {
+    margin-left: 20px;
+    margin-right: 20px;
+    color: #37373f;
+  }
+}
+.formulario-agendamento {
+  display: flex;
+  color: #37373f;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin: 0 auto;
+}
+.form-name {
+  font-weight: 700;
+  display: flex;
+  font-family: "Poppins";
+  margin-left: 20px;
+  margin-top: 20px;
+  flex-wrap: wrap;
+  font-size: 25px;
+  color: #37373f;
+  margin-bottom: 40px;
+  line-height: 27px;
+  max-width: 100vw;
+  flex-direction: column;
+  margin-bottom: 70px;
+}
+
+form.form-contato label {
+  width: 37px;
+  height: 14px;
+  left: 259px;
+  top: 290px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 14px;
+  /* identical to box height */
+  letter-spacing: 0.015em;
+  color: #37373f;
+}
+
+.formulario-contato {
+  width: 330px;
+  height: 750px;
+  background-color: #fff;
+  box-shadow: -2px 4px 8px rgba(0, 0, 0, 0.4);
+  border-radius: 5px;
+  margin-top: 100px;
+  padding: 20px 20px;
+  z-index: 0;
+}
+.contate-nos {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  width: 280px;
+  height: 800px;
+}
+.map {
+  width: 220px;
+  height: 250px;
+  margin: 0 auto;
+}
+.map iframe {
+  width: 285px;
+  margin: 0 auto;
+  border-radius: 10px;
+}
+.contate-nos > div {
+  margin: 5px 5px;
+  display: flex;
+  max-width: 360px;
+  justify-content: start;
+}
+.contate-nos > div img {
+  margin-right: 10px;
+  width: 18px;
+}
+form.form-contato input,
+form.form-contato textarea {
+  width: 100%;
+  padding: 8px 5px;
+  margin-bottom: 20px;
+
+  border: none;
+  border-bottom: 2px solid #d1d1d1;
+  font-family: "Open sans";
+  color: #5a5a5a;
+  font-size: 12px;
+  font-weight: 400;
+}
+
+input[type="text"] {
+  border: none;
+  border-bottom: 2px solid red;
+}
+.form_wrap {
+  padding: 0;
+}
+.form-icon {
+  text-align: center;
+  background-color: #37373f;
+  border-radius: 50%;
+  font-size: 40px;
+  color: white;
+  width: 100px;
+  height: 100px;
+  margin: auto;
+  margin-bottom: 30px;
+  line-height: 100px;
+}
+.nome-card1 {
+  font-weight: 700;
+  font-family: "Poppins";
+  border-left-width: 27px;
+  margin-left: 27px;
+  margin-top: 30px;
+  font-size: 35px;
+  color: #37373f;
+}
+
+.info_tilte {
+  font-family: "Poppins";
+  margin-top: 20px;
+  margin-left: 27px;
+}
+
+form.form-contato textarea {
+  max-width: 100%;
+  min-width: 100%;
+  max-height: 220px;
+}
+
+form.form-contato #btnSend {
+  width: 180px;
+  background: #f9b15d;
+  padding: 10px;
+  border: none;
+  border-radius: 25px;
+  align-self: flex-end;
+  color: #fff;
+  font-family: "Open sans";
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+form.form-contato #btnSend:hover {
+  background: #f9b15d;
+}
+.button {
+  left: 25px !important;
+  width: 200px;
 }
 
 /* Página Sobre*/
@@ -218,11 +504,56 @@ body {
     height: 18px;
   }
 
+  /* CRITICAS ======================================*/
+  .criticas {
+    height: 1100px;
+    display: flex;
+    width: 100%;
+    background-color: #eca72c;
+    gap: 3px;
+    flex-wrap: wrap;
+    margin-top: 50px;
+    padding: 30px 63px;
+  }
+  .conteudo {
+    max-width: 250px;
+    height: 240px;
+    background-color: #fff;
+    border-radius: 8px;
+  }
+  .conteudo span {
+    font-family: "IM Fell Double Pica SC", serif;
+    color: #eca72c;
+    font-size: 18px;
+  }
+  .conteudo p {
+    margin-top: 40px;
+    padding: 8px;
+    color: #37373f;
+    font-size: 12px;
+    font-weight: 500;
+    text-align: center;
+  }
+  .img-nome {
+    color: #37373f;
+    padding: 15px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  .img-nome h2 {
+    font-size: 18px;
+    margin-left: 20px;
+  }
+  .circulo {
+    width: 70px;
+    height: 70px;
+  }
   /*Footer*/
   .footer-bg {
     background-color: #37373f;
     position: relative;
-    bottom: 0;
+    bottom: 0 !important;
     width: 100%;
   }
 
@@ -289,91 +620,25 @@ body {
     justify-content: center;
     align-items: center;
     margin: 0 auto;
-    height: 300px;
     /* border-radius: 20px 20px 0px 0px; */
     box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
       rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
       rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
     margin-bottom: 150px;
-    width: 1000px;
   }
 
   #atuacao-direito {
-    width: 80%;
+    width: 360px;
+    height: 700px;
     display: block;
     margin-bottom: 20px;
     margin-right: 20px;
-    margin-left: 50px;
+    margin-left: 20px;
+    font-size: 12px;
+
     box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
       rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
       rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
     margin-bottom: 150px;
   }
-
-  /* fim nossos serviços */
-  .maps {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 0 auto;
-    height: 300px;
-    /* border-radius: 20px 20px 0px 0px; */
-    /*        box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
-*/
-    margin-bottom: 150px;
-    width: 300px;
-  }
-
-  .maps-nome {
-    margin-bottom: 400px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .google-maps h1 {
-    font-size: 25px;
-    margin-bottom: 100px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
 }
-
-/* Card feed-back Cliente */
-@media screen and (max-width: 1000px) {
-  .column {
-    width: 50%;
-    display: block;
-    margin-bottom: 20px;
-  }
-}
-
-@media screen and (max-width: 600px) {
-  .column {
-    width: 50%;
-    display: block;
-    margin-bottom: 20px;
-  }
-
-  .nossos-service {
-    font-size: 26px;
-  }
-}
-
-/* fim card de feedback */
-@media screen and (max-width: 600px) {
-  .container {
-    width: 100%;
-    display: block;
-    margin-bottom: 20px;
-    margin-right: 20px;
-    margin-left: 50px;
-  }
-
-  .card-nome h1 {
-    font-size: 30px;
-  }
-}
-
-/**/
